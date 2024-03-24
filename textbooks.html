@@ -1,98 +1,154 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nhà sách abcxyz</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="nav-bar">
-            <div id="up-header">
-                <div class="container col-xl-8 col-12 header-container">
-                    <a class="header-left" href="/">
-                        <img src="./assets/logo 1.png" id="logo-image" alt="Nha sach ABC">
-                        <p id="logo-name">BOOKSTORE</p>
-                    </a>
+      <div class="nav-bar">
+        <div id="up-header">
+          <div class="container col-xl-8 col-12 header-container">
+            <a class="header-left" href="/">
+              <img
+                src="./assets/logo 1.png"
+                id="logo-image"
+                alt="Nha sach ABC"
+              />
+              <p id="logo-name">BOOKSTORE</p>
+            </a>
 
-                    <div class="header-right">
-                        <input type="text" placeholder="Tìm kiếm sản phẩm tại đây" id="search-box">
-                        <a href="javascript:void(0)" class="noti">
-                            <img src="./assets/notification.svg" class="svg-icon" alt="notification icon">
-                            <p>Thông báo</p>
-                            <div class="notification-box">
-                                <p class="noti-box-title"><img src="./assets/red_noti.svg"
-                                        style="height: 20px; margin-right: 8px;" alt="">Thông báo (2)</p>
-                                <p class="noti-header">Chào mừng bạn đến với trang web!</p>
-                                <p class="noti-content">Chào mừng bạn đã đến trang web của chúng tôi</p>
-                                <p class="noti-header">Thông báo số 1</p>
-                                <p class="noti-content">Chúng tôi có rất nhiều ưu đãi cho bạn trong hôm nay. Mua sắm
-                                    ngay!
-                                </p>
-                            </div>
-                        </a>
-                        <a href="./cart.html" class="cart">
-                            <img src="./assets/cart.svg" class="svg-icon" alt="notification icon">
-                            <p>Giỏ hàng</p>
-                            <p class="cart-num-product">0</p>
-                        </a>
-                        <a href="./login.html" class="user">
-                            <img src="./assets/user.svg" class="svg-icon" alt="notification icon">
-                            <p>Tài khoản</p>
-                        </a>
-                        <div>
-                            <button id="mode"><img class="dark-light" src="/assets/mode.png" alt=""></button>
-                        </div>
-                        <div class="menu-box">
-                            <a href="#offcanvasExample" data-bs-toggle="offcanvas" role="button"
-                                aria-controls="offcanvasExample">
-                                <img src="./assets/dropdown_menu.svg" alt="" class="menu-img">
-                                <p>Menu</p>
-                            </a>
-                        </div>
-                    </div>
+            <div class="header-right">
+              <input
+                type="text"
+                placeholder="Tìm kiếm sản phẩm tại đây"
+                id="search-box"
+              />
+              <a href="javascript:void(0)" class="noti">
+                <img
+                  src="./assets/notification.svg"
+                  class="svg-icon"
+                  alt="notification icon"
+                />
+                <p>Thông báo</p>
+                <div class="notification-box">
+                  <p class="noti-box-title">
+                    <img
+                      src="./assets/red_noti.svg"
+                      style="height: 20px; margin-right: 8px"
+                      alt=""
+                    />Thông báo (2)
+                  </p>
+                  <p class="noti-header">Chào mừng bạn đến với trang web!</p>
+                  <p class="noti-content">
+                    Chào mừng bạn đã đến trang web của chúng tôi
+                  </p>
+                  <p class="noti-header">Thông báo số 1</p>
+                  <p class="noti-content">
+                    Chúng tôi có rất nhiều ưu đãi cho bạn trong hôm nay. Mua sắm
+                    ngay!
+                  </p>
                 </div>
+              </a>
+              <a href="./cart.html" class="cart">
+                <img
+                  src="./assets/cart.svg"
+                  class="svg-icon"
+                  alt="notification icon"
+                />
+                <p>Giỏ hàng</p>
+                <p class="cart-num-product">0</p>
+              </a>
+              <a href="./login.html" class="user">
+                <img
+                  src="./assets/user.svg"
+                  class="svg-icon"
+                  alt="notification icon"
+                />
+                <p>Tài khoản</p>
+              </a>
+              <div>
+                <button id="mode">
+                  <img class="dark-light" src="/assets/mode.png" alt="" />
+                </button>
+              </div>
+              <div class="menu-box">
+                <a
+                  href="#offcanvasExample"
+                  data-bs-toggle="offcanvas"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
+                  <img
+                    src="./assets/dropdown_menu.svg"
+                    alt=""
+                    class="menu-img"
+                  />
+                  <p>Menu</p>
+                </a>
+              </div>
             </div>
-            <ul class="navbar">
-                <li class="menu-item"><a href="index.html"> Trang chủ </a></li>
-                <li class="menu-item"><a href="books.html"> Sách </a></li>
-                <li class="menu-item"><a href="magazine.html"> Tạp chí </a></li>
-                <li class="current-page"><a href=""> Sách giáo khoa </a></li>
-                <li class="menu-item"><a href="all_news.html"> Bài viết </a></li>
-                <li class="menu-item"><a href="recommended.html"> Đề xuất </a></li>
-                <li class="menu-item"><a href="sale.html"> Sale </a></li>
-            </ul>
+          </div>
         </div>
-        <div class="nav-menu-wrapper">
-            <ul class="navbar">
-                <li class="menu-item"><a href="index.html"> Trang chủ </a></li>
-                <li class="menu-item"><a href="books.html"> Sách </a></li>
-                <li class="menu-item"><a href="magazine.html"> Tạp chí </a></li>
-                <li class="current-page"><a href=""> Sách giáo khoa </a></li>
-                <li class="menu-item"><a href="all_news.html"> Bài viết </a></li>
-                <li class="menu-item"><a href="recommended.html"> Đề xuất </a></li>
-                <li class="menu-item"><a href="sale.html"> Sale </a></li>
-            </ul>
-        </div>
-        <!-- <div class="col-10 navbar-sm">
+        <ul class="navbar">
+          <li class="menu-item"><a href="index.html"> Trang chủ </a></li>
+          <li class="menu-item"><a href="books.html"> Sách </a></li>
+          <li class="menu-item"><a href="magazine.html"> Tạp chí </a></li>
+          <li class="current-page"><a href=""> Sách giáo khoa </a></li>
+          <li class="menu-item"><a href="all_news.html"> Bài viết </a></li>
+          <li class="menu-item"><a href="recommended.html"> Đề xuất </a></li>
+          <li class="menu-item"><a href="sale.html"> Sale </a></li>
+        </ul>
+      </div>
+      <div class="nav-menu-wrapper">
+        <ul class="navbar">
+          <li class="menu-item"><a href="index.html"> Trang chủ </a></li>
+          <li class="menu-item"><a href="books.html"> Sách </a></li>
+          <li class="menu-item"><a href="magazine.html"> Tạp chí </a></li>
+          <li class="current-page"><a href=""> Sách giáo khoa </a></li>
+          <li class="menu-item"><a href="all_news.html"> Bài viết </a></li>
+          <li class="menu-item"><a href="recommended.html"> Đề xuất </a></li>
+          <li class="menu-item"><a href="sale.html"> Sale </a></li>
+        </ul>
+      </div>
+      <!-- <div class="col-10 navbar-sm">
             <p>Menu</p>
             <a href="javascript:void(0);" onclick="showDropdownMenu()">
                 <img src="./assets/dropdown_menu.svg" alt="" class="menu-sm">
@@ -100,538 +156,642 @@
         </div> -->
     </header>
 
-    <div class="offcanvas offcanvas-end custom-offcanvas" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Danh mục</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="list-group">
-                <li class="list-group-item"><a href="index.html">Trang chủ</a></li>
-                <li class="list-group-item"><a href="books.html">Sách</a></li>
-                <li class="list-group-item"><a href="magazine.html">Tạp chí</a></li>
-                <li class="list-group-item current-page"><a href="">Sách giáo khoa</a></li>
-                <li class="list-group-item"><a href="all_news.html">Bài viết</a></li>
-                <li class="list-group-item"><a href="recommended.html">Đề xuất</a></li>
-                <li class="list-group-item"><a href="sale.html">Sale</a></li>
-            </ul>
-        </div>
+    <div
+      class="offcanvas offcanvas-end custom-offcanvas"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Danh mục</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a href="index.html">Trang chủ</a></li>
+          <li class="list-group-item"><a href="books.html">Sách</a></li>
+          <li class="list-group-item"><a href="magazine.html">Tạp chí</a></li>
+          <li class="list-group-item current-page">
+            <a href="">Sách giáo khoa</a>
+          </li>
+          <li class="list-group-item"><a href="all_news.html">Bài viết</a></li>
+          <li class="list-group-item">
+            <a href="recommended.html">Đề xuất</a>
+          </li>
+          <li class="list-group-item"><a href="sale.html">Sale</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="product-path container">
-        <a href="index.html">Trang chủ /</a>
-        <a class="book-name-path" href="book.html">Sách giáo khoa</a>
-        <!-- <p class="category-name" style="margin-top: 10px; color: #1b8bcb; font-size: 14px;"><a href="" style="text-decoration: none;"><span style="font-weight: normal; color: gray;">Trang chủ / Sách /</span> Sapiens-lược sử loài người</p></a> -->
+      <a href="index.html">Trang chủ /</a>
+      <a class="book-name-path" href="book.html">Sách giáo khoa</a>
+      <!-- <p class="category-name" style="margin-top: 10px; color: #1b8bcb; font-size: 14px;"><a href="" style="text-decoration: none;"><span style="font-weight: normal; color: gray;">Trang chủ / Sách /</span> Sapiens-lược sử loài người</p></a> -->
     </div>
 
     <div class="books-container container">
-        <div class="accordion" id="myAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        Môn học
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                        <ul class="accordion-ul">
-                            <li class="active">Tất cả</li>
-                            <li>Toán</li>
-                            <li>Văn học</li>
-                            <li>Lịch sử</li>
-                            <li>Vật lý</li>
-                            <!-- <li>Văn hóa xã hội - Lịch sử</li>
+      <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Môn học
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+          >
+            <div class="accordion-body">
+              <ul class="accordion-ul">
+                <li class="active">Tất cả</li>
+                <li>Toán</li>
+                <li>Văn học</li>
+                <li>Lịch sử</li>
+                <li>Vật lý</li>
+                <!-- <li>Văn hóa xã hội - Lịch sử</li>
                         <li>Tâm linh, tôn giáo</li> -->
-                            <li>Hóa học</li>
-                            <li>Sinh học</li>
-                            <li>Ngoại ngữ</li>
-                            <li>Địa lý</li>
-                            <li>Khác</li>
-                            <!-- Thêm nhiều mục khác tùy ý -->
-                        </ul>
-                    </div>
-                </div>
+                <li>Hóa học</li>
+                <li>Sinh học</li>
+                <li>Ngoại ngữ</li>
+                <li>Địa lý</li>
+                <li>Khác</li>
+                <!-- Thêm nhiều mục khác tùy ý -->
+              </ul>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        Lớp
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <ul class="accordion-ul">
-                            <li class="active">Tất cả</li>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
-                            <li>7</li>
-                            <li>8</li>
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li>Khác</li>
-                        </ul>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Lớp
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <ul class="accordion-ul">
+                <li class="active">Tất cả</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>Khác</li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-book-container">
+        <div class="filter">
+          Sắp xếp theo
+          <select id="filter-select">
+            <option value="filter1" selected="selected">Mới nhất</option>
+            <option value="filter2">Tăng dần</option>
+            <option value="filter3">Giảm dần</option>
+            <option value="filter4">Giá</option>
+            <option value="filter5">Đánh giá</option>
+          </select>
         </div>
 
-        <div class="list-book-container">
-            <div class="filter">
-                Sắp xếp theo
-                <select id="filter-select">
-                    <option value="filter1" selected="selected">Mới nhất</option>
-                    <option value="filter2">Tăng dần</option>
-                    <option value="filter3">Giảm dần</option>
-                    <option value="filter4">Giá</option>
-                    <option value="filter5">Đánh giá</option>
-                </select>
+        <div class="list-book-items">
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd2.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục STEM 2</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">50.000đ</a>
             </div>
-
-            <div class="list-book-items">
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd2.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục STEM 2</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">50.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd6.png" alt="">
-                        <a href="product_detail.html" class="book-title">Bài tập giáo dục công dân 6</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd9.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục công dân 9</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">20.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/su10.png" alt="">
-                        <a href="product_detail.html" class="book-title">Lịch sử 10</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/ta3.png" alt="">
-                        <a href="product_detail.html" class="book-title">Tiếng anh 3</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">50.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/ta7.png" alt="">
-                        <a href="product_detail.html" class="book-title">Tiếng anh 7</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/van7.png" alt="">
-                        <a href="product_detail.html" class="book-title">Ngữ văn 7</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">20.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/toan3.png" alt="">
-                        <a href="product_detail.html" class="book-title">Toán 3</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/toan12.png" alt="">
-                        <a href="product_detail.html" class="book-title">Toán 12</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">50.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/tin11.png" alt="">
-                        <a href="product_detail.html" class="book-title">Tin học 11</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/tc1.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục thể chất 1</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">20.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/toan1.png" alt="">
-                        <a href="product_detail.html" class="book-title">Toán 1</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd2.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục STEM 2</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">50.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd6.png" alt="">
-                        <a href="product_detail.html" class="book-title">Bài tập giáo dục công dân 6</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd9.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục công dân 9</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">20.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/su10.png" alt="">
-                        <a href="product_detail.html" class="book-title">Lịch sử 10</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd2.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục STEM 2</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">50.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd6.png" alt="">
-                        <a href="product_detail.html" class="book-title">Bài tập giáo dục công dân 6</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd9.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục công dân 9</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">20.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/su10.png" alt="">
-                        <a href="product_detail.html" class="book-title">Lịch sử 10</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd2.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục STEM 2</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">50.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd6.png" alt="">
-                        <a href="product_detail.html" class="book-title">Bài tập giáo dục công dân 6</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd9.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục công dân 9</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">20.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/su10.png" alt="">
-                        <a href="product_detail.html" class="book-title">Lịch sử 10</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd2.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục STEM 2</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">50.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd6.png" alt="">
-                        <a href="product_detail.html" class="book-title">Bài tập giáo dục công dân 6</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd9.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục công dân 9</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">20.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/su10.png" alt="">
-                        <a href="product_detail.html" class="book-title">Lịch sử 10</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd2.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục STEM 2</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">50.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd6.png" alt="">
-                        <a href="product_detail.html" class="book-title">Bài tập giáo dục công dân 6</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd9.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục công dân 9</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">20.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/su10.png" alt="">
-                        <a href="product_detail.html" class="book-title">Lịch sử 10</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd2.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục STEM 2</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">50.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd6.png" alt="">
-                        <a href="product_detail.html" class="book-title">Bài tập giáo dục công dân 6</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/gd9.png" alt="">
-                        <a href="product_detail.html" class="book-title">Giáo dục công dân 9</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">20.000đ</a>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <a href="product_detail.html">
-                        <img src="./textbooks/su10.png" alt="">
-                        <a href="product_detail.html" class="book-title">Lịch sử 10</a>
-                    </a>
-                    <div>
-                        <a href="product_detail.html" class="current-price">30.000đ</a>
-                    </div>
-                </div>
-
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd6.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Bài tập giáo dục công dân 6</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
             </div>
-            <div class="container pagination-container" style="margin-top: 20px;">
-                <div class="pag-box">
-                    <button class="btn1" onclick="toPrevBookPage()"><img src="./assets/arrow.svg" alt="">Trước</button>
-                    <ul>
-                        <li class="link active" value="1" onclick="activeLinkPage(this)">1</li>
-                        <li class="link" value="2" onclick="activeLinkPage(this)">2</li>
-                        <li class="link" value="3" onclick="activeLinkPage(this)">3</li>
-                        <!-- <li class="link" value="4" onclick="activeLinkPage(this)">4</li>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd9.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục công dân 9</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">20.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/su10.png" alt="" />
+              <a href="product_detail.html" class="book-title">Lịch sử 10</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/ta3.png" alt="" />
+              <a href="product_detail.html" class="book-title">Tiếng anh 3</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">50.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/ta7.png" alt="" />
+              <a href="product_detail.html" class="book-title">Tiếng anh 7</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/van7.png" alt="" />
+              <a href="product_detail.html" class="book-title">Ngữ văn 7</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">20.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/toan3.png" alt="" />
+              <a href="product_detail.html" class="book-title">Toán 3</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/toan12.png" alt="" />
+              <a href="product_detail.html" class="book-title">Toán 12</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">50.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/tin11.png" alt="" />
+              <a href="product_detail.html" class="book-title">Tin học 11</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/tc1.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục thể chất 1</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">20.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/toan1.png" alt="" />
+              <a href="product_detail.html" class="book-title">Toán 1</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd2.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục STEM 2</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">50.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd6.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Bài tập giáo dục công dân 6</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd9.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục công dân 9</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">20.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/su10.png" alt="" />
+              <a href="product_detail.html" class="book-title">Lịch sử 10</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd2.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục STEM 2</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">50.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd6.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Bài tập giáo dục công dân 6</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd9.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục công dân 9</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">20.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/su10.png" alt="" />
+              <a href="product_detail.html" class="book-title">Lịch sử 10</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd2.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục STEM 2</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">50.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd6.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Bài tập giáo dục công dân 6</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd9.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục công dân 9</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">20.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/su10.png" alt="" />
+              <a href="product_detail.html" class="book-title">Lịch sử 10</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd2.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục STEM 2</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">50.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd6.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Bài tập giáo dục công dân 6</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd9.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục công dân 9</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">20.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/su10.png" alt="" />
+              <a href="product_detail.html" class="book-title">Lịch sử 10</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd2.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục STEM 2</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">50.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd6.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Bài tập giáo dục công dân 6</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd9.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục công dân 9</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">20.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/su10.png" alt="" />
+              <a href="product_detail.html" class="book-title">Lịch sử 10</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd2.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục STEM 2</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">50.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd6.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Bài tập giáo dục công dân 6</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/gd9.png" alt="" />
+              <a href="product_detail.html" class="book-title"
+                >Giáo dục công dân 9</a
+              >
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">20.000đ</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="product_detail.html">
+              <img src="./textbooks/su10.png" alt="" />
+              <a href="product_detail.html" class="book-title">Lịch sử 10</a>
+            </a>
+            <div>
+              <a href="product_detail.html" class="current-price">30.000đ</a>
+            </div>
+          </div>
+        </div>
+        <div class="container pagination-container" style="margin-top: 20px">
+          <div class="pag-box">
+            <button class="btn1" onclick="toPrevBookPage()">
+              <img src="./assets/arrow.svg" alt="" />Trước
+            </button>
+            <ul>
+              <li class="link active" value="1" onclick="activeLinkPage(this)">
+                1
+              </li>
+              <li class="link" value="2" onclick="activeLinkPage(this)">2</li>
+              <li class="link" value="3" onclick="activeLinkPage(this)">3</li>
+              <!-- <li class="link" value="4" onclick="activeLinkPage(this)">4</li>
                         <li class="link" value="5" onclick="activeLinkPage(this)">5</li>
                         <li class="link" value="6" onclick="activeLinkPage(this)">6</li> -->
-                    </ul>
-                    <button class="btn2" onclick="toNextBookPage()">Sau <img src="./assets/arrow.svg" alt=""></button>
-                </div>
-            </div>
+            </ul>
+            <button class="btn2" onclick="toNextBookPage()">
+              Sau <img src="./assets/arrow.svg" alt="" />
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-
-
-
 
     <!-- Email toast -->
     <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
-        <div id="email-sub-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <img src="./assets/party.svg" class="rounded me-2 toast-img" alt="...">
-                <strong class="me-auto">Thông báo</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-                Cảm ơn bạn đã đăng ký E-mail với chúng tôi
-            </div>
+      <div
+        id="email-sub-toast"
+        class="toast hide"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <img
+            src="./assets/party.svg"
+            class="rounded me-2 toast-img"
+            alt="..."
+          />
+          <strong class="me-auto">Thông báo</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
         </div>
+        <div class="toast-body">Cảm ơn bạn đã đăng ký E-mail với chúng tôi</div>
+      </div>
     </div>
     <!-- End Email toast -->
 
     <div class="email-container col-10 col-sm-8">
-        <span class="email-bg-img"></span>
-        <p>Nhận ưu đãi đặc biệt từ chúng tôi:</p>
-        <div class="email-sub">
-            <input type="text" name="email" class="email-input" placeholder="Nhập email của bạn tại đây">
-            <button class="email-btn">Đăng ký</button>
-        </div>
+      <span class="email-bg-img"></span>
+      <p>Nhận ưu đãi đặc biệt từ chúng tôi:</p>
+      <div class="email-sub">
+        <input
+          type="text"
+          name="email"
+          class="email-input"
+          placeholder="Nhập email của bạn tại đây"
+        />
+        <button class="email-btn">Đăng ký</button>
+      </div>
     </div>
 
     <!-- Footer Section-->
     <footer>
-        <div class="container footer-container">
-            <div class="about col-md-3 col-6">
-                <p>VỀ CHÚNG TÔI</p>
-                <ul>
-                    <li><a href="">Giới thiệu</a></li>
-                    <li><a href="">Hệ thống nhà sách</a></li>
-                    <li><a href="">Chính sách bảo mật</a></li>
-                    <li><a href="">Chính sách bán hàng</a></li>
-                    <li><a href="">Phương thức vận chuyển</a></li>
-                </ul>
-            </div>
-            <div class="support col-md-3 col-6">
-                <p>HỖ TRỢ KHÁCH HÀNG</p>
-                <ul>
-                    <li><a href="">Chính sách đổi - trả - hoàn tiền</a></li>
-                    <li><a href="">Chính sách vận chuyển</a></li>
-                    <li><a href="">Phương thức thanh toán</a></li>
-                    <li><a href="">Phương thức thanh toán và xuất hóa đơn</a></li>
-                </ul>
-            </div>
-            <div class="account col-md-3 col-6">
-                <p>TÀI KHOẢN CỦA TÔI</p>
-                <ul>
-                    <li><a href="">Chi tiết tài khoản</a></li>
-                    <li><a href="">Lịch sử mua hàng</a></li>
-                    <li><a href="">Danh sách yêu thích</a></li>
-                    <li><a href="">Cách thức tạo mới, đăng ký tài khoản</a></li>
-                    <li><a href="">Kiểm tra tài khoản</a></li>
-                </ul>
-            </div>
-            <div class="contact col-md-3 col-6">
-                <p>LIÊN HỆ</p>
-                <ul>
-                    <li>
-                        <img src="./assets/email.svg" class="contact-icon" alt="">
-                        <a href="">info@nhasach.com.vn</a>
-                    </li>
-                    <li>
-                        <img src="./assets/phone.svg" class="contact-icon" alt="">
-                        <a href="">1900 9999</a>
-                    </li>
-                    <li>
-                        <img src="./assets/location.svg" class="contact-icon" alt="">
-                        <a href="">Tầng số 28, Landmark 81, 208 Nguyễn Hữu Cảnh, phường 22, quận Bình Thạnh, Tp. Hồ Chí
-                            Minh, Việt Nam.</a>
-                    </li>
-                </ul>
-                <div class="social-contact">
-                    <a href="https://www.facebook.com/" target="_blank"> <img src="./assets/facebook.svg" alt=""> </a>
-                    <a href="https://www.youtube.com/" target="_blank"> <img src="./assets/youtube.svg" alt=""> </a>
-                    <a href="https://www.linkedin.com/" target="_blank"> <img src="./assets/linkedin.svg" alt=""> </a>
-                    <a href="https://www.instagram.com/" target="_blank"> <img src="./assets/instagram.svg" alt=""> </a>
-                </div>
-            </div>
+      <div class="container footer-container">
+        <div class="about col-md-3 col-6">
+          <p>VỀ CHÚNG TÔI</p>
+          <ul>
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Hệ thống nhà sách</a></li>
+            <li><a href="">Chính sách bảo mật</a></li>
+            <li><a href="">Chính sách bán hàng</a></li>
+            <li><a href="">Phương thức vận chuyển</a></li>
+          </ul>
         </div>
-        <p id="copyright">Copyright © 2023. All Rights Reserved.</p>
+        <div class="support col-md-3 col-6">
+          <p>HỖ TRỢ KHÁCH HÀNG</p>
+          <ul>
+            <li><a href="">Chính sách đổi - trả - hoàn tiền</a></li>
+            <li><a href="">Chính sách vận chuyển</a></li>
+            <li><a href="">Phương thức thanh toán</a></li>
+            <li><a href="">Phương thức thanh toán và xuất hóa đơn</a></li>
+          </ul>
+        </div>
+        <div class="account col-md-3 col-6">
+          <p>TÀI KHOẢN CỦA TÔI</p>
+          <ul>
+            <li><a href="">Chi tiết tài khoản</a></li>
+            <li><a href="">Lịch sử mua hàng</a></li>
+            <li><a href="">Danh sách yêu thích</a></li>
+            <li><a href="">Cách thức tạo mới, đăng ký tài khoản</a></li>
+            <li><a href="">Kiểm tra tài khoản</a></li>
+          </ul>
+        </div>
+        <div class="contact col-md-3 col-6">
+          <p>LIÊN HỆ</p>
+          <ul>
+            <li>
+              <img src="./assets/email.svg" class="contact-icon" alt="" />
+              <a href="">info@nhasach.com.vn</a>
+            </li>
+            <li>
+              <img src="./assets/phone.svg" class="contact-icon" alt="" />
+              <a href="">1900 9999</a>
+            </li>
+            <li>
+              <img src="./assets/location.svg" class="contact-icon" alt="" />
+              <a href=""
+                >Tầng số 28, Landmark 81, 208 Nguyễn Hữu Cảnh, phường 22, quận
+                Bình Thạnh, Tp. Hồ Chí Minh, Việt Nam.</a
+              >
+            </li>
+          </ul>
+          <div class="social-contact">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="./assets/facebook.svg" alt="" />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="./assets/youtube.svg" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="./assets/linkedin.svg" alt="" />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="./assets/instagram.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p id="copyright">Copyright © 2023. All Rights Reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/script.js"></script>
-</body>
-
+  </body>
 </html>
