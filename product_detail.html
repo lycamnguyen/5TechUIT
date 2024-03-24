@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5TechUIT | Chi tiết sản phẩm</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div id="up-header">
+                <div class="container col-xl-8 col-12 header-container">
+                    <a class="header-left" href="/">
+                        <img src="./assets/logo 1.png" id="logo-image" alt="Nha sach ABC">
+                        <p id="logo-name">5TechUIT</p>
+                    </a>
+
+                    <div class="header-right">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm tại đây" id="search-box">
+                        <a href="javascript:void(0)" class="noti">
+                            <img src="./assets/notification.svg" class="svg-icon" alt="notification icon">
+                            <p>Thông báo</p>
+                            <div class="notification-box">
+                                <p class="noti-box-title"><img src="./assets/red_noti.svg"
+                                        style="height: 20px; margin-right: 8px;" alt="">Thông báo (2)</p>
+                                <p class="noti-header">Chào mừng bạn đến với trang web!</p>
+                                <p class="noti-content">Chào mừng bạn đã đến trang web của chúng tôi</p>
+                                <p class="noti-header">Thông báo số 1</p>
+                                <p class="noti-content">Chúng tôi có rất nhiều ưu đãi cho bạn trong hôm nay. Mua sắm
+                                    ngay!
+                                </p>
+                            </div>
+                        </a>
+                        <a href="./cart.html" class="cart" id="cart-icon">
+                            <img src="./assets/cart.svg" class="svg-icon" alt="notification icon">
+                            <p>Giỏ hàng</p>
+                            <p class="cart-num-product">0</p>
+                        </a>
+                        <a href="./login.html" class="user">
+                            <img src="./assets/user.svg" class="svg-icon" alt="notification icon">
+                            <p>Tài khoản</p>
+                        </a>
+                        <div>
+                            <button id="mode"><img class="dark-light" src="/assets/mode.png" alt=""></button>
+                        </div>
+                        <div class="menu-box">
+                            <a href="#offcanvasExample" data-bs-toggle="offcanvas" role="button"
+                                aria-controls="offcanvasExample">
+                                <img src="./assets/dropdown_menu.svg" alt="" class="menu-img">
+                                <p>Menu</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar">
+                <li class="menu-item"><a href="index.html"> Trang chủ </a></li>
+                <li class="menu-item current-page"><a href="books.html"> Sách </a></li>
+                <!-- <li class="menu-item"><a href="magazine.html"> Tạp chí </a></li>
+                <li class="menu-item"><a href="textbooks.html"> Sách giáo khoa </a></li> -->
+                <li class="menu-item"><a href="all_news.html"> Bài viết </a></li>
+                <li class="menu-item"><a href="recommended.html"> Đề xuất </a></li>
+                <li class="menu-item"><a href="sale.html"> Sale </a></li>
+            </ul>
+        </div>
+        <div class="nav-menu-wrapper">
+            <ul class="navbar">
+                <li class="menu-item"><a href="index.html"> Trang chủ </a></li>
+                <li class="menu-item current-page"><a href="books.html"> Sách </a></li>
+                <!-- <li class="menu-item"><a href="magazine.html"> Tạp chí </a></li>
+                <li class="menu-item"><a href="textbooks.html"> Sách giáo khoa </a></li> -->
+                <li class="menu-item"><a href="all_news.html"> Bài viết </a></li>
+                <li class="menu-item"><a href="recommended.html"> Đề xuất </a></li>
+                <li class="menu-item"><a href="sale.html"> Sale </a></li>
+            </ul>
+        </div>
+        <!-- <div class="col-10 navbar-sm">
+            <p>Menu</p>
+            <a href="javascript:void(0);" onclick="showDropdownMenu()">
+                <img src="./assets/dropdown_menu.svg" alt="" class="menu-sm">
+            </a>
+        </div> -->
+
+    </header>
+
+    <div class="offcanvas offcanvas-end custom-offcanvas" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Danh mục</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group">
+                <li class="list-group-item "><a href="index.html">Trang chủ</a></li>
+                <li class="list-group-item current-page"><a href="books.html">Sách</a></li>
+                <!-- <li class="list-group-item"><a href="magazine.html">Tạp chí</a></li>
+                <li class="list-group-item"><a href="textbooks.html">Sách giáo khoa</a></li> -->
+                <li class="list-group-item"><a href="all_news.html">Bài viết</a></li>
+                <li class="list-group-item"><a href="recommended.html">Đề xuất</a></li>
+                <li class="list-group-item"><a href="sale.html">Sale</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product-path container">
+        <a href="index.html">Trang chủ /</a>
+        <a href="books.html">Sách /</a>
+        <a href="#" class="book-name-path">Sapiens - Lược sử loài người</a>
+        <!-- <p class="category-name" style="margin-top: 10px; color: #1b8bcb; font-size: 14px;"><a href="" style="text-decoration: none;"><span style="font-weight: normal; color: gray;">Trang chủ / Sách /</span> Sapiens-lược sử loài người</p></a> -->
+    </div>
+
+    <div class="container product-detail-container cart-container">
+        <div class="product-detail-box">
+            <div class="pd-main-info">
+                <img src="books/big-magic_ElizabethGilbert_250.jpg"
+                    style="width: 200px; height: 300px; object-fit: cover ;border: 1px solid #cdcdcd;"></img>
+                <div class="main-info">
+                    <div id="title">Big Magic</div>
+                    <div id="price">250.000 đ</div>
+                    <div class="description">
+                        <b>Tác giả:</b> Elizabeth <span style="word-spacing: 200px">Gilbert </span> <b>Kích thước:</b>
+                        16cm x 24cm <br>
+                        <b>Nhà xuất bản:</b> Tri <span style="word-spacing: 217px">thức </span> <b>Hình thức bìa:</b>
+                        Bìa Mềm <br>
+                        <b>Nhà phát hành:</b> Alpha Books
+                    </div>
+                    <form action="" id="add-to-cart-form">
+                        <div id="count">
+                            <p style="margin-bottom: 8px;">Số lượng</p>
+                            <span class="quantity-box">
+                                <a href="javascript:void(0);" class="decrease"><img class="quantity-symbol"
+                                        src="./assets/minus.svg" alt=""></a>
+                                <input type="text" class="quantity-input" value="1" min="0" max="100">
+                                <a href="javascript:void(0);" class="increase"><img class="quantity-symbol"
+                                        src="./assets/plus.svg" alt=""></a>
+                            </span>
+                        </div>
+
+                        <button class="button pd-dt-btn"><a id="pay-now" href="cart.html"
+                                style="text-decoration: none; color: white; padding: 10px 22px">Thanh toán
+                                ngay</a></button>
+                        <button type="submit" class="button pd-dt-btn add-to-cart">Thêm vào giỏ hàng
+                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-shopping-cart">
+                                <circle cx="9" cy="21" r="1" id="id_101" style="stroke: rgb(255, 255, 255);"></circle>
+                                <circle cx="20" cy="21" r="1" id="id_102" style="stroke: rgb(255, 255, 255);"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" id="id_103"
+                                    style="stroke: rgb(255, 255, 255);"></path>
+                            </svg>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="pd-all-info" id="extra">
+                <div id="title">Mô tả sản phẩm:</div>
+                <div class="detail-info">
+                    <b>Tên sách:</b>Big Magic <br>
+                    <b>Tác giả:</b> Elizabeth Gilbert <br>
+                    <b>Nhà xuất bản:</b> Alpha Books <br>
+                    <b>Người dịch:</b> Nguyễn Thủy Cung <br>
+                    <b>Năm xuất bản:</b> 2022 <br>
+                    <b>Số trang:</b> 550 <br>
+                    <b>Thể loại:</b> Kỹ năng sống <br>
+                    <b>Mô tả ngắn:</b> Câu hỏi lớn và sâu sắc của Harari là: chúng ta thực sự muốn gì? Có cách nào để
+                    đạt được hạnh phúc
+                    cho con người chúng ta, hoặc thậm chí liệu chúng ta có biết được nó là gì hay không? Trong cốt lõi
+                    của nó,
+                    Sapiens biện luận rằng chúng ta không biết về bản thân chúng ta, huống chi biết được những...
+                </div>
+            </div>
+
+
+            <!-- Đánh giá sản phẩm -->
+            <div class="rating-container">
+                <div id="title">Đánh giá sản phẩm:</div>
+                <div class="rating-box">
+                    <div class="rating-element">
+                        <div class="rating-element-left">
+                            <p class="rating-author">Dũng Minh</p>
+                            <div class="rating-stars">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="rating-elemnt-right">
+                            <p class="rating-text">
+                                Chất lượng sản phẩm tuyệt vời, sách viết gần gũi, dễ hiểu với những mẩu truyện ngắn lấy
+                                từ thực tế đời sống
+                                của tác giả, rất sinh động, thực tế và mang tính giáo dục cao.
+                            </p>
+                            <p class="rating-date">12/12/2023</p>
+                        </div>
+                    </div>
+                    <div class="rating-element">
+                        <div class="rating-element-left">
+                            <p class="rating-author">Dũng Minh</p>
+                            <div class="rating-stars">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="rating-elemnt-right">
+                            <p class="rating-text">
+                                Chất lượng sản phẩm tuyệt vời, sách viết gần gũi, dễ hiểu với những mẩu truyện ngắn lấy
+                                từ thực tế đời sống
+                                của tác giả, rất sinh động, thực tế và mang tính giáo dục cao.
+                            </p>
+                            <p class="rating-date">12/12/2023</p>
+                        </div>
+                    </div>
+                    <div class="rating-element">
+                        <div class="rating-element-left">
+                            <p class="rating-author">Dũng Minh</p>
+                            <div class="rating-stars">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                                <img src="./assets/star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="rating-elemnt-right">
+                            <p class="rating-text">
+                                Chất lượng sản phẩm tuyệt vời, sách viết gần gũi, dễ hiểu với những mẩu truyện ngắn lấy
+                                từ thực tế đời sống
+                                của tác giả, rất sinh động, thực tế và mang tính giáo dục cao.
+                            </p>
+                            <p class="rating-date">12/12/2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="flex-container">
+                    <div class="flex-element" style="text-align: center; font-weight: bold; font-size: 24px;">Dũng Minh</div>
+                    <div class="flex-element" style="width: 725px">
+                        Chất lượng sản phẩm tuyệt vời, sách viết gần gũi, dễ hiểu với những mẩu truyện ngắn lấy từ thực tế đời sống 
+                        của tác giả, rất sinh động, thực tế và mang tính giáo dục cao.
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-element" style="text-align: center; font-weight: bold; font-size: 24px;">Dũng Minh</div>
+                    <div class="flex-element" style="width: 725px">
+                        Chất lượng sản phẩm tuyệt vời, sách viết gần gũi, dễ hiểu với những mẩu truyện ngắn lấy từ thực tế đời sống 
+                        của tác giả, rất sinh động, thực tế và mang tính giáo dục cao.
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-element" style="text-align: center; font-weight: bold; font-size: 24px;">Dũng Minh</div>
+                    <div class="flex-element" style="width: 725px">
+                        Chất lượng sản phẩm tuyệt vời, sách viết gần gũi, dễ hiểu với những mẩu truyện ngắn lấy từ thực tế đời sống 
+                        của tác giả, rất sinh động, thực tế và mang tính giáo dục cao.
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="cart-recommend col-xl-2 col-sm-12 col-12">
+            <p class="cart-title recommend-title">Đề xuất</p>
+            <div class="recommend-books">
+                <div class="product-item">
+                    <a href="">
+                        <img src="./books/ke-toan-via-he_DarrellMullis-JudithOrloff-179.jpg" alt="">
+                        <a href="" class="book-title">Kế Toán Vỉa Hè</a>
+                    </a>
+
+                    <p class="book-author">Darrell Mullis</p>
+                    <div>
+                        <a href="#" class="current-price">179.000đ</a>
+                        <p class="old-price">225.000đ</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="">
+                        <img src="./books//thao-tung-tam-ly_Shannon-Thomas-LCSW_117.jpg" alt="">
+                        <a href="" class="book-title">Sapiens - Lược sử loài người</a>
+                    </a>
+
+                    <p class="book-author">Elizabeth Gilbert</p>
+                    <div>
+                        <a href="#" class="current-price">125.000đ</a>
+                        <p class="old-price">199.000đ</p>
+                    </div>
+                </div>
+                <div class="product-item hidden1">
+                    <a href="">
+                        <img src="./books/heaven_Mieko-Kawakami_269.jpg" alt="">
+                        <a href="" class="book-title">Sapiens - Lược sử loài người</a>
+                    </a>
+
+                    <p class="book-author">Elizabeth Gilbert</p>
+                    <div>
+                        <a href="#" class="current-price">125.000đ</a>
+                        <p class="old-price">199.000đ</p>
+                    </div>
+                </div>
+                <div class="product-item hidden1">
+                    <a href="">
+                        <img src="./books/nghigiaulamgiau_Napoleon-Hill_110.jpg" alt="">
+                        <a href="" class="book-title">Big magic</a>
+                    </a>
+
+                    <p class="book-author">Elizabeth Gilbert</p>
+                    <div>
+                        <a href="#" class="current-price">125.000đ</a>
+                        <p class="old-price">199.000đ</p>
+                    </div>
+                </div>
+                <div class="product-item hidden2">
+                    <a href="">
+                        <img src="./books/nghe_thuat_dam_phan-Donald-Trump_300.jpg" alt="">
+                        <a href="" class="book-title">D. Trump - Nghệ thuật đàm phán</a>
+                    </a>
+
+                    <p class="book-author">Donald J Trump, Tony Schartz</p>
+                    <div>
+                        <a href="#" class="current-price">125.000đ</a>
+                        <p class="old-price">199.000đ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+        <div id="add-cart-succ-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./assets/party.svg" class="rounded me-2 toast-img" alt="...">
+                <strong class="me-auto">Thông báo</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Thêm vào giỏ hàng thành công
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+        <div id="email-sub-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./assets/party.svg" class="rounded me-2 toast-img" alt="...">
+                <strong class="me-auto">Thông báo</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Cảm ơn bạn đã đăng ký E-mail với chúng tôi
+            </div>
+        </div>
+    </div>
+
+    <div class="email-container col-10 col-sm-8">
+        <span class="email-bg-img"></span>
+        <p>Nhận ưu đãi đặc biệt từ chúng tôi:</p>
+        <div class="email-sub">
+            <input type="text" name="email" class="email-input" placeholder="Nhập email của bạn tại đây">
+            <button class="email-btn">Đăng ký</button>
+        </div>
+    </div>
+
+    <!-- Footer Section-->
+    <footer>
+        <div class="container footer-container">
+            <div class="about col-md-3 col-6">
+                <p>VỀ CHÚNG TÔI</p>
+                <ul>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Hệ thống nhà sách</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <li><a href="">Chính sách bán hàng</a></li>
+                    <li><a href="">Phương thức vận chuyển</a></li>
+                </ul>
+            </div>
+            <div class="support col-md-3 col-6">
+                <p>HỖ TRỢ KHÁCH HÀNG</p>
+                <ul>
+                    <li><a href="">Chính sách đổi - trả - hoàn tiền</a></li>
+                    <li><a href="">Chính sách vận chuyển</a></li>
+                    <li><a href="">Phương thức thanh toán</a></li>
+                    <li><a href="">Phương thức thanh toán và xuất hóa đơn</a></li>
+                </ul>
+            </div>
+            <div class="account col-md-3 col-6">
+                <p>TÀI KHOẢN CỦA TÔI</p>
+                <ul>
+                    <li><a href="">Chi tiết tài khoản</a></li>
+                    <li><a href="">Lịch sử mua hàng</a></li>
+                    <li><a href="">Danh sách yêu thích</a></li>
+                    <li><a href="">Cách thức tạo mới, đăng ký tài khoản</a></li>
+                    <li><a href="">Kiểm tra tài khoản</a></li>
+                </ul>
+            </div>
+            <div class="contact col-md-3 col-6">
+                <p>LIÊN HỆ</p>
+                <ul>
+                    <li>
+                        <img src="./assets/email.svg" class="contact-icon" alt="">
+                        <a href="">info@nhasach.com.vn</a>
+                    </li>
+                    <li>
+                        <img src="./assets/phone.svg" class="contact-icon" alt="">
+                        <a href="">1900 9999</a>
+                    </li>
+                    <li>
+                        <img src="./assets/location.svg" class="contact-icon" alt="">
+                        <a href="">Tầng số 28, Landmark 81, 208 Nguyễn Hữu Cảnh, phường 22, quận Bình Thạnh, Tp. Hồ Chí
+                            Minh, Việt Nam.</a>
+                    </li>
+                </ul>
+                <div class="social-contact">
+                    <a href="https://www.facebook.com/" target="_blank"> <img src="./assets/facebook.svg" alt=""> </a>
+                    <a href="https://www.youtube.com/" target="_blank"> <img src="./assets/youtube.svg" alt=""> </a>
+                    <a href="https://www.linkedin.com/" target="_blank"> <img src="./assets/linkedin.svg" alt=""> </a>
+                    <a href="https://www.instagram.com/" target="_blank"> <img src="./assets/instagram.svg" alt=""> </a>
+                </div>
+            </div>
+        </div>
+        <p id="copyright">Copyright © 2023. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

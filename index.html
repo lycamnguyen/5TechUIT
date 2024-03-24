@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5TechUIT</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div id="up-header">
+          <div class="container col-xl-8 col-12 header-container">
+            <a class="header-left" href="/">
+              <img
+                src="./assets/logo 1.png"
+                id="logo-image"
+                alt="Nha sach ABC"
+              />
+              <p id="logo-name">5TechUIT</p>
+            </a>
+
+            <div class="header-right">
+              <input
+                type="text"
+                placeholder="Tìm kiếm sản phẩm tại đây"
+                id="search-box"
+              />
+              <a href="javascript:void(0)" class="noti">
+                <img
+                  src="./assets/notification.svg"
+                  class="svg-icon"
+                  alt="notification icon"
+                />
+                <p>Thông báo</p>
+                <div class="notification-box">
+                  <p class="noti-box-title">
+                    <img
+                      src="./assets/red_noti.svg"
+                      style="height: 20px; margin-right: 8px"
+                      alt=""
+                    />Thông báo (2)
+                  </p>
+                  <p class="noti-header">Chào mừng bạn đến với trang web!</p>
+                  <p class="noti-content">
+                    Chào mừng bạn đã đến trang web của chúng tôi
+                  </p>
+                  <p class="noti-header">Thông báo số 1</p>
+                  <p class="noti-content">
+                    Chúng tôi có rất nhiều ưu đãi cho bạn trong hôm nay. Mua sắm
+                    ngay!
+                  </p>
+                </div>
+              </a>
+              <a href="./cart.html" class="cart">
+                <img
+                  src="./assets/cart.svg"
+                  class="svg-icon"
+                  alt="notification icon"
+                />
+                <p>Giỏ hàng</p>
+                <p class="cart-num-product">0</p>
+              </a>
+              <a href="./login.html" class="user">
+                <img
+                  src="./assets/user.svg"
+                  class="svg-icon"
+                  alt="notification icon"
+                />
+                <p>Tài khoản</p>
+              </a>
+              <div>
+                <button id="mode">
+                  <img class="dark-light" src="/assets/mode.png" alt="" />
+                </button>
+              </div>
+              <div class="menu-box">
+                <a
+                  href="#offcanvasExample"
+                  data-bs-toggle="offcanvas"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
+                  <img
+                    src="./assets/dropdown_menu.svg"
+                    alt=""
+                    class="menu-img"
+                  />
+                  <p>Menu</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar">
+          <li class="current-page"><a href=""> Trang chủ </a></li>
+          <li class="menu-item"><a href="books.html"> Sách </a></li>
+          <!-- <li class="menu-item"><a href="magazine.html"> Tạp chí </a></li>
+                <li class="menu-item"><a href="textbooks.html"> Sách giáo khoa </a></li> -->
+          <li class="menu-item"><a href="all_news.html"> Bài viết </a></li>
+          <li class="menu-item"><a href="recommended.html"> Đề xuất </a></li>
+          <li class="menu-item"><a href="sale.html"> Sale </a></li>
+        </ul>
+      </div>
+      <div class="nav-menu-wrapper">
+        <ul class="navbar">
+          <li class="current-page"><a href=""> Trang chủ </a></li>
+          <li class="menu-item"><a href="books.html"> Sách </a></li>
+          <!-- <li class="menu-item"><a href="magazine.html"> Tạp chí </a></li>
+          <li class="menu-item">
+            <a href="textbooks.html"> Sách giáo khoa </a>
+          </li> -->
+          <li class="menu-item"><a href="all_news.html"> Bài viết </a></li>
+          <li class="menu-item"><a href="recommended.html"> Đề xuất </a></li>
+          <li class="menu-item"><a href="sale.html"> Sale </a></li>
+        </ul>
+      </div>
+      <!-- <div class="col-10 navbar-sm">
+            <p>Menu</p>
+            <a href="javascript:void(0);" onclick="showDropdownMenu()">
+                <img src="./assets/dropdown_menu.svg" alt="" class="menu-sm">
+            </a>
+        </div> -->
+    </header>
+
+    <div
+      class="offcanvas offcanvas-end custom-offcanvas"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Danh mục</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group">
+          <li class="list-group-item current-page">
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="list-group-item"><a href="books.html">Sách</a></li>
+          <!-- <li class="list-group-item"><a href="magazine.html">Tạp chí</a></li>
+          <li class="list-group-item">
+            <a href="textbooks.html">Sách giáo khoa</a>
+          </li> -->
+          <li class="list-group-item"><a href="all_news.html">Bài viết</a></li>
+          <li class="list-group-item">
+            <a href="recommended.html">Đề xuất</a>
+          </li>
+          <li class="list-group-item"><a href="sale.html">Sale</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- banner section -->
+    <div id="carousel_banner" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/banner1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/banner1_2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/banner1_2_3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel_banner"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel_banner"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="guarantee-container">
+      <div class="guarantee container">
+        <div class="guar-item">
+          <img src="./assets/fast_delivery.svg" alt="" />
+          <div>
+            <p class="guar-item-header">Giao hàng nhanh</p>
+            <p class="guar-item-content">
+              Giao hàng tận nơi, nhanh chóng, an toàn, tiện lợi.
+            </p>
+          </div>
+        </div>
+        <div class="guar-item">
+          <img src="./assets/ez_payment.svg" alt="" />
+          <div>
+            <p class="guar-item-header">Thanh toán dễ dàng</p>
+            <p class="guar-item-content">
+              Mua sắm trực tuyến, thanh toán nhanh chóng.
+            </p>
+          </div>
+        </div>
+        <div class="guar-item">
+          <img src="./assets/best_price.svg" alt="" />
+          <div>
+            <p class="guar-item-header">Giá tốt nhất</p>
+            <p class="guar-item-content">
+              Giá hời, chất lượng tuyệt vời, ưu đãi quanh năm.
+            </p>
+          </div>
+        </div>
+        <div class="guar-item">
+          <img src="./assets/safety.svg" style="height: 35px" alt="" />
+          <div>
+            <p class="guar-item-header">An toàn tuyệt đối</p>
+            <p class="guar-item-content">
+              Mua sắm với sự bảo đảm tuyệt đối tại cửa hàng chúng tôi
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container product-container" style="padding-bottom: 40px">
+      <div class="container category-header">
+        <p class="category-name">Bán chạy nhất tuần</p>
+        <a href="books.html" class="view-more">Xem thêm</a>
+      </div>
+      <div class="grid-category">
+        <div class="product-item">
+          <a href="product_detail.html">
+            <img src="./books/big-magic_ElizabethGilbert_250.jpg" alt="" />
+            <a href="product_detail.html" class="book-title">Big Magic</a>
+          </a>
+
+          <p class="book-author">Elizabeth Gilbert</p>
+          <div>
+            <a href="product_detail.html" class="current-price">250.000đ</a>
+            <p class="old-price">299.000đ</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="product_detail.html">
+            <img
+              src="./books/gieo-suy-nghi-gat-thanh-cong_Napoleon Hill_116.jpg"
+              alt=""
+            />
+            <a href="product_detail.html" class="book-title"
+              >Gieo Suy Nghĩ Gặt Thành Công</a
+            >
+          </a>
+
+          <p class="book-author">Napolenon Hill</p>
+          <div>
+            <a href="product_detail.html" class="current-price">116.000đ</a>
+            <p class="old-price">125.000đ</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="product_detail.html">
+            <img src="./books/nha-gia-kim_Paulo-Coelho_150.jpg" alt="" />
+            <a href="product_detail.html" class="book-title">Nhà Giả Kim</a>
+          </a>
+
+          <p class="book-author">Paulo Coelho</p>
+          <div>
+            <a href="product_detail.html" class="current-price">150.000đ</a>
+            <p class="old-price">199.000đ</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="product_detail.html">
+            <img
+              src="./books/nghe_thuat_dam_phan-Donald-Trump_300.jpg"
+              alt=""
+            />
+            <a href="product_detail.html" class="book-title"
+              >Nghệ Thuật Đàm Phán</a
+            >
+          </a>
+
+          <p class="book-author">Donald Trump</p>
+          <div>
+            <a href="product_detail.html" class="current-price">300.000đ</a>
+            <p class="old-price">400.000đ</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="product_detail.html">
+            <img
+              src="./books/tam-ly-hoc-toi-pham_Thomas-Harris_285.jpg"
+              alt=""
+            />
+            <a href="product_detail.html" class="book-title"
+              >Tâm Lý Học Tội Phạm</a
+            >
+          </a>
+
+          <p class="book-author">Thomas Harris</p>
+          <div>
+            <a href="product_detail.html" class="current-price">285.000đ</a>
+            <p class="old-price">300.000đ</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <a href="product_detail.html">
+            <img src="./books/heaven_Mieko-Kawakami_269.jpg" alt="" />
+            <a href="product_detail.html" class="book-title">Haven</a>
+          </a>
+
+          <p class="book-author">Mieko Kawakami</p>
+          <div>
+            <a href="product_detail.html" class="current-price">269.000đ</a>
+            <p class="old-price">329.000đ</p>
+          </div>
+        </div>
+      </div>
+      <!-- End flash sale -->
+
+      <!-- Sách mới -->
+      <!-- End Sách mới   -->
+    </div>
+    <div class="sale">
+      <div
+        class="clock"
+        style="color: #d0011b; margin-bottom: 0px; padding-top: 30px"
+      >
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <img src="./assets/flash.svg" width="50px" alt="" />
+          <h3 style="text-align: center">GIẢM GIÁ SỐC TRONG</h3>
+          <img src="./assets/flash.svg" width="50px" alt="" />
+        </div>
+        <div class="countdown" style="color: #1b8bcb">
+          <div class="hours"></div>
+          <div>:</div>
+          <div class="minutes"></div>
+          <div>:</div>
+          <div class="seconds"></div>
+        </div>
+      </div>
+
+      <div class="container category-header" style="margin-top: 0px">
+        <div style="display: flex">
+          <img src="./assets/flash.svg" style="width: 40px" alt="" />
+          <p class="category-name">Flash Sale</p>
+        </div>
+
+        <a href="sale.html" class="view-more">Xem thêm</a>
+      </div>
+      <div id="carouselExample" class="carousel book-slider">
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <div class="product-item">
+              <a class="prod-img-title" href="product_detail.html">
+                <span class="sale-num">60% OFF</span>
+                <img
+                  src="./books/nghigiaulamgiau_Napoleon-Hill_110.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Nghĩ Giàu Làm giàu</a
+                >
+              </a>
+              <p class="book-author">Napoleon Hill</p>
+              <div>
+                <a href="#" class="current-price">125.000đ</a>
+                <p class="old-price">180.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a class="prod-img-title" href="product_detail.html">
+                <span class="sale-num">20% OFF</span>
+                <img src="./books/big-magic_ElizabethGilbert_250.jpg" alt="" />
+                <a href="product_detail.html" class="book-title">Big Magic</a>
+              </a>
+              <p class="book-author">Elizabeth Gilbert</p>
+              <div>
+                <a href="product_detail.html" class="current-price">250.000đ</a>
+                <p class="old-price">300.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a class="prod-img-title" href="product_detail.html">
+                <span class="sale-num">40% OFF</span>
+                <img
+                  src="./books/mot-cuoc-doi-dang-do-john-f-kennedy_Robert Dallek_329.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Một Cuộc Đời Đáng Nhớ</a
+                >
+              </a>
+              <p class="book-author">Elizabeth Gilbert</p>
+              <div>
+                <a href="#" class="current-price">329.000đ</a>
+                <p class="old-price">500.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a class="prod-img-title" href="product_detail.html">
+                <span class="sale-num">50% OFF</span>
+                <img
+                  src="./books/tet-o-lang-dia-nguc_thao-trang_115.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Tết Ở Làng Địa Ngục</a
+                >
+              </a>
+              <p class="book-author">Thảo Trang</p>
+              <div>
+                <a href="#" class="current-price">115.000đ</a>
+                <p class="old-price">230.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a class="prod-img-title" href="product_detail.html">
+                <span class="sale-num">45% OFF</span>
+                <img
+                  src="./books/sapiens-luoc-su-loai-nguoi_Ova-Rihana-235.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Sapiens - Lược Sử Loài Người</a
+                >
+              </a>
+              <p class="book-author">Yuval Noah Harari</p>
+              <div>
+                <a href="#" class="current-price">235.000đ</a>
+                <p class="old-price">299.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a class="prod-img-title" href="product_detail.html">
+                <span class="sale-num">35% OFF</span>
+                <img
+                  src="./books/ke-toan-via-he_DarrellMullis-JudithOrloff-179.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Kế Toán Vỉa Hè</a
+                >
+              </a>
+              <p class="book-author">Darrell Mullis, Judith Orloff</p>
+              <div>
+                <a href="product_detail.html" class="current-price">179.000đ</a>
+                <p class="old-price">300.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a class="prod-img-title" href="product_detail.html">
+                <span class="sale-num">25% OFF</span>
+                <img
+                  src="./books/tam-ly-hoc-toi-pham_Thomas-Harris_285.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Tâm Lý Học Tội Phạm</a
+                >
+              </a>
+              <p class="book-author">Thomas Harris</p>
+              <div>
+                <a href="product_detail.html" class="current-price">285.000đ</a>
+                <p class="old-price">350.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a class="prod-img-title" href="product_detail.html">
+                <span class="sale-num">20% OFF</span>
+                <img
+                  src="./books/mot-cuoc-doi-dang-do-john-f-kennedy_Robert Dallek_329.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Một Cuộc Đời Dang Dở</a
+                >
+              </a>
+              <p class="book-author">John F Kennedy</p>
+              <div>
+                <a href="product_detail.html" class="current-price">329.000đ</a>
+                <p class="old-price">380.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a class="prod-img-title" href="product_detail.html">
+                <span class="sale-num">65% OFF</span>
+                <img
+                  src="./books/lam-ra-lam-choi-ra-choi_Cal-Newport_120.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Làm Ra Làm, Chơi Ra Chơi</a
+                >
+              </a>
+              <p class="book-author">Cal Newport</p>
+              <div>
+                <a href="product_detail.html" class="current-price">125.000đ</a>
+                <p class="old-price">300.000đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <div class="container category-header">
+        <p class="category-name">Sách mới</p>
+        <a href="books.html" class="view-more">Xem thêm</a>
+      </div>
+      <div id="carouselExample" class="carousel book-slider">
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/nghe_thuat_dam_phan-Donald-Trump_300.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Nghệ Thuật Đàm Phán</a
+                >
+              </a>
+
+              <p class="book-author">Donald Trump</p>
+              <div>
+                <a href="product_detail.html" class="current-price">300.000đ</a>
+                <p class="old-price">350.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/sapiens-luoc-su-loai-nguoi_Ova-Rihana-235.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Sapiens - Lược sử loài người</a
+                >
+              </a>
+
+              <p class="book-author">Yuval Noah Harari</p>
+              <div>
+                <a href="product_detail.html" class="current-price">235.000đ</a>
+                <p class="old-price">299.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img src="./books/nha-gia-kim_Paulo-Coelho_150.jpg" alt="" />
+                <a href="product_detail.html" class="book-title">Nhà Giả Kim</a>
+              </a>
+
+              <p class="book-author">Paulo Coelho</p>
+              <div>
+                <a href="product_detail.html" class="current-price">150.000đ</a>
+                <p class="old-price">199.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/thay-doi-ti-hon-hieu-qua-bat-ngo_James-Clear_137.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Thay Đổi Tí Hon, Hiệu Quả Bất Ngờ</a
+                >
+              </a>
+
+              <p class="book-author">James Clear</p>
+              <div>
+                <a href="product_detail.html" class="current-price">137.000đ</a>
+                <p class="old-price">160.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/thao-tung-tam-ly_Shannon-Thomas-LCSW_117.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Thao Túng Tâm Lý</a
+                >
+              </a>
+
+              <p class="book-author">Shannon Thomas</p>
+              <div>
+                <a href="product_detail.html" class="current-price">117.000đ</a>
+                <p class="old-price">199.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/nghigiaulamgiau_Napoleon-Hill_110.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Nghĩ Giàu Làm Giàu</a
+                >
+              </a>
+
+              <p class="book-author">Napoleon Hill</p>
+              <div>
+                <a href="product_detail.html" class="current-price">110.000đ</a>
+                <p class="old-price">145.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/ky-luat-ban-than_PegDawson-RichardGuare_125.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Kỷ Luật Bản Thân</a
+                >
+              </a>
+
+              <p class="book-author">Peg Dawson, Richard Guare</p>
+              <div>
+                <a href="product_detail.html" class="current-price">125.000đ</a>
+                <p class="old-price">199.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/mot-cuoc-doi-dang-do-john-f-kennedy_Robert Dallek_329.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Một Cuộc Đời Đáng Nhớ</a
+                >
+              </a>
+
+              <p class="book-author">Rober Dallek</p>
+              <div>
+                <a href="product_detail.html" class="current-price">329.000đ</a>
+                <p class="old-price">399.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/gieo-suy-nghi-gat-thanh-cong_Napoleon Hill_116.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Gieo Suy Nghĩ Gặt Thành Công</a
+                >
+              </a>
+
+              <p class="book-author">Napoleon Hill</p>
+              <div>
+                <a href="product_detail.html" class="current-price">116.000đ</a>
+                <p class="old-price">190.000đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div style="padding-bottom: 40px">
+      <div class="container category-header">
+        <p class="category-name">Sách tâm lý - Kĩ năng</p>
+        <a href="books.html" class="view-more">Xem thêm</a>
+      </div>
+      <div id="carouselExample" class="carousel book-slider">
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img src="./books/nha-gia-kim_Paulo-Coelho_150.jpg" alt="" />
+                <a href="product_detail.html" class="book-title">Nhà Giả Kim</a>
+              </a>
+
+              <p class="book-author">Paulo Coelho</p>
+              <div>
+                <a href="product_detail.html" class="current-price">150.000đ</a>
+                <p class="old-price">199.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/thay-doi-ti-hon-hieu-qua-bat-ngo_James-Clear_137.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Thay Đổi Tí Hon, Hiệu Quả Bất Ngờ</a
+                >
+              </a>
+
+              <p class="book-author">James Clear</p>
+              <div>
+                <a href="product_detail.html" class="current-price">137.000đ</a>
+                <p class="old-price">160.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/thao-tung-tam-ly_Shannon-Thomas-LCSW_117.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Thao Túng Tâm Lý</a
+                >
+              </a>
+
+              <p class="book-author">Shannon Thomas</p>
+              <div>
+                <a href="product_detail.html" class="current-price">117.000đ</a>
+                <p class="old-price">199.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/nghe_thuat_dam_phan-Donald-Trump_300.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Nghệ Thuật Đàm Phán</a
+                >
+              </a>
+
+              <p class="book-author">Donald Trump</p>
+              <div>
+                <a href="product_detail.html" class="current-price">300.000đ</a>
+                <p class="old-price">350.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/sapiens-luoc-su-loai-nguoi_Ova-Rihana-235.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Sapiens - Lược sử loài người</a
+                >
+              </a>
+
+              <p class="book-author">Yuval Noah Harari</p>
+              <div>
+                <a href="product_detail.html" class="current-price">235.000đ</a>
+                <p class="old-price">299.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img src="./books/heaven_Mieko-Kawakami_269.jpg" alt="" />
+                <a href="product_detail.html" class="book-title">Heaven</a>
+              </a>
+
+              <p class="book-author">Mieko Kawakami</p>
+              <div>
+                <a href="product_detail.html" class="current-price">117.000đ</a>
+                <p class="old-price">199.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/nghigiaulamgiau_Napoleon-Hill_110.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Nghĩ Giàu Làm Giàu</a
+                >
+              </a>
+
+              <p class="book-author">Napoleon Hill</p>
+              <div>
+                <a href="product_detail.html" class="current-price">110.000đ</a>
+                <p class="old-price">145.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/mot-cuoc-doi-dang-do-john-f-kennedy_Robert Dallek_329.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Một Cuộc Đời Đáng Nhớ</a
+                >
+              </a>
+
+              <p class="book-author">Rober Dallek</p>
+              <div>
+                <a href="product_detail.html" class="current-price">329.000đ</a>
+                <p class="old-price">399.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/gieo-suy-nghi-gat-thanh-cong_Napoleon Hill_116.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Gieo Suy Nghĩ Gặt Thành Công</a
+                >
+              </a>
+
+              <p class="book-author">Napoleon Hill</p>
+              <div>
+                <a href="product_detail.html" class="current-price">116.000đ</a>
+                <p class="old-price">190.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="product-item">
+              <a href="product_detail.html">
+                <img
+                  src="./books/ky-luat-ban-than_PegDawson-RichardGuare_125.jpg"
+                  alt=""
+                />
+                <a href="product_detail.html" class="book-title"
+                  >Kỷ Luật Bản Thân</a
+                >
+              </a>
+
+              <p class="book-author">Peg Dawson, Richard Guare</p>
+              <div>
+                <a href="product_detail.html" class="current-price">125.000đ</a>
+                <p class="old-price">199.000đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="news-container">
+      <p class="news-title">BÀI VIẾT MỚI NHẤT</p>
+      <div class="container list-news-item">
+        <div class="news-item">
+          <img
+            class="news-item-img"
+            src="./other_images/news_img1.jpg"
+            alt=""
+          />
+          <p class="news-date">8 tháng 12, 2023</p>
+          <a href="news.html" class="news-item-header"
+            >Những lợi ích của việc đọc: thông minh, lành mạnh, hạnh phúc</a
+          >
+          <p class="news-item-content">
+            Sách chính là nguồn tri thức vô tận về mọi lĩnh vực trong cuộc sống
+            của những người đi trước viết ra kể lại và truyền đạt cho chúng
+            ta....
+          </p>
+          <a href="news.html" class="cont-read-btn">Đọc tiếp...</a>
+        </div>
+        <div class="news-item">
+          <img
+            class="news-item-img"
+            src="./other_images/news_img2.jpg"
+            alt=""
+          />
+          <p class="news-date">15 tháng 12, 2023</p>
+          <a href="news.html" class="news-item-header"
+            >8 lý do khoa học chứng minh về đọc sách</a
+          >
+          <p class="news-item-content">
+            Sách chính là nguồn tri thức vô tận về mọi lĩnh vực trong cuộc sống
+            của những người đi trước viết ra kể lại và truyền đạt cho chúng
+            ta....
+          </p>
+          <a href="news.html" class="cont-read-btn">Đọc tiếp...</a>
+        </div>
+        <div class="news-item">
+          <img
+            class="news-item-img"
+            src="./other_images/news_img3.jpg"
+            alt=""
+          />
+          <p class="news-date">20 tháng 12, 2023</p>
+          <a href="news.html" class="news-item-header"
+            >Vì sao đọc sách lại quan trọng với trẻ em?</a
+          >
+          <p class="news-item-content">
+            Sách chính là nguồn tri thức vô tận về mọi lĩnh vực trong cuộc sống
+            của những người đi trước viết ra kể lại và truyền đạt cho chúng
+            ta....
+          </p>
+          <a href="news.html" class="cont-read-btn">Đọc tiếp...</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="all-news-box">
+          <a href="all_news.html" class="all-news-btn">XEM TẤT CẢ BÀI VIẾT</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="customer-container">
+      <p class="customer-title">KHÁCH HÀNG CỦA CHÚNG TÔI</p>
+      <div class="container">
+        <p class="customer-review">
+          Sách là nguồn tri thức vô hạn, giúp chúng ta có thể bổ sung kiến thức
+          và nâng cao vốn hiểu biết của chính mình. Ở sách, bạn có thể tìm tòi
+          thêm về văn hoá - chính trị, kinh tế - xã hội, lịch sử hoặc đơn giản
+          hơn là phong cách sống,... Những điều tưởng chừng nhỏ nhặt nhất trong
+          cuộc sống như cách nói lời cảm ơn, xin lỗi cũng được truyền tải nhẹ
+          nhàng và tinh tế qua những trang sách.
+        </p>
+        <div class="customer-box">
+          <div id="portrait1" class="customer-box-item">
+            <div class="customer-img-box">
+              <img
+                class="customer-img"
+                src="./other_images/chandung1.jpg"
+                alt=""
+              />
+            </div>
+
+            <p class="customer-name">Khoa Pug</p>
+            <p class="customer-role">Nhà sưu tầm sách</p>
+          </div>
+          <div id="portrait2" class="customer-box-item">
+            <div class="customer-img-box">
+              <img
+                class="customer-img selected-img"
+                src="./other_images/chandung2.jpg"
+                alt=""
+              />
+            </div>
+
+            <p class="customer-name">JVevermind</p>
+            <p class="customer-role">Nhà yêu sách</p>
+          </div>
+          <div id="portrait3" class="customer-box-item">
+            <div class="customer-img-box">
+              <img
+                class="customer-img"
+                src="./other_images/chandung3.jpg"
+                alt=""
+              />
+            </div>
+            <p class="customer-name">Bích Phương</p>
+            <p class="customer-role">Người đọc</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="more-detail-container">
+      <div class="container list-detail-item">
+        <div class="detail-item">
+          <img
+            class="detail-item-img"
+            src="./assets/detail_customer.svg"
+            alt=""
+          />
+          <p class="detail-item-number">123,456</p>
+          <p class="detail-item-content">Khách hàng</p>
+        </div>
+        <div class="detail-item">
+          <img class="detail-item-img" src="./assets/detail_book.svg" alt="" />
+          <p class="detail-item-number">30,000</p>
+          <p class="detail-item-content">Cuốn sách</p>
+        </div>
+        <div class="detail-item">
+          <img class="detail-item-img" src="./assets/detail_map.svg" alt="" />
+          <p class="detail-item-number">127</p>
+          <p class="detail-item-content">Cửa hàng toàn quốc</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Email toast -->
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+      <div
+        id="email-sub-toast"
+        class="toast hide"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <img
+            src="./assets/party.svg"
+            class="rounded me-2 toast-img"
+            alt="..."
+          />
+          <strong class="me-auto">Thông báo</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Cảm ơn bạn đã đăng ký E-mail với chúng tôi</div>
+      </div>
+    </div>
+    <!-- End Email toast -->
+
+    <div class="email-container col-10 col-sm-8">
+      <span class="email-bg-img"></span>
+      <p>Nhận ưu đãi đặc biệt từ chúng tôi:</p>
+      <div class="email-sub">
+        <input
+          type="text"
+          name="email"
+          class="email-input"
+          placeholder="Nhập email của bạn tại đây"
+        />
+        <button class="email-btn">Đăng ký</button>
+      </div>
+    </div>
+
+    <!-- Footer Section-->
+    <footer>
+      <div class="container footer-container">
+        <div class="about col-md-3 col-6">
+          <p>VỀ CHÚNG TÔI</p>
+          <ul>
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Hệ thống nhà sách</a></li>
+            <li><a href="">Chính sách bảo mật</a></li>
+            <li><a href="">Chính sách bán hàng</a></li>
+            <li><a href="">Phương thức vận chuyển</a></li>
+          </ul>
+        </div>
+        <div class="support col-md-3 col-6">
+          <p>HỖ TRỢ KHÁCH HÀNG</p>
+          <ul>
+            <li><a href="">Chính sách đổi - trả - hoàn tiền</a></li>
+            <li><a href="">Chính sách vận chuyển</a></li>
+            <li><a href="">Phương thức thanh toán</a></li>
+            <li><a href="">Phương thức thanh toán và xuất hóa đơn</a></li>
+          </ul>
+        </div>
+        <div class="account col-md-3 col-6">
+          <p>TÀI KHOẢN CỦA TÔI</p>
+          <ul>
+            <li><a href="">Chi tiết tài khoản</a></li>
+            <li><a href="">Lịch sử mua hàng</a></li>
+            <li><a href="">Danh sách yêu thích</a></li>
+            <li><a href="">Cách thức tạo mới, đăng ký tài khoản</a></li>
+            <li><a href="">Kiểm tra tài khoản</a></li>
+          </ul>
+        </div>
+        <div class="contact col-md-3 col-6">
+          <p>LIÊN HỆ</p>
+          <ul>
+            <li>
+              <img src="./assets/email.svg" class="contact-icon" alt="" />
+              <a href="">info@nhasach.com.vn</a>
+            </li>
+            <li>
+              <img src="./assets/phone.svg" class="contact-icon" alt="" />
+              <a href="">1900 9999</a>
+            </li>
+            <li>
+              <img src="./assets/location.svg" class="contact-icon" alt="" />
+              <a href=""
+                >Tầng số 28, Landmark 81, 208 Nguyễn Hữu Cảnh, phường 22, quận
+                Bình Thạnh, Tp. Hồ Chí Minh, Việt Nam.</a
+              >
+            </li>
+          </ul>
+          <div class="social-contact">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="./assets/facebook.svg" alt="" />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="./assets/youtube.svg" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="./assets/linkedin.svg" alt="" />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="./assets/instagram.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p id="copyright">Copyright © 2023. All Rights Reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
