@@ -3893,3 +3893,83 @@ input[type="checkbox"]:checked+label::before {
         background-color: #242526;
     }
 }
+
+/* Start Sách 2 page */
+.theloai-container{
+    width: 900px;
+    margin: 20px auto 0 auto;
+    border: solid 3px;
+    border-color: orange;
+    display: flex;
+    justify-content: space-around;
+}
+.theloai-container a:link{
+    text-decoration: none;
+}
+.sapxep {
+    position: relative;
+    width: 750px;
+    margin: 20px auto 0 auto;
+  }
+  
+  .sapxep-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+    list-style: none;
+  }
+  
+  .sapxep-options li {
+    padding: 5px;
+  }
+  
+  .sapxep-options li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sapxep-trigger {
+    background-color: #00a2ff;
+    padding: 10px;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+  }
+  
+.anhbia-container{
+    width: fit-content;
+    margin:20px 20px 20px 0;
+    position: relative;
+}
+.anhbia-container img{
+    width: 150px;
+    height: 200px;
+}
+.addsach{
+    background-color: #1B8BCB;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0 0 0;
+  cursor: pointer;
+}
+
+.sach-container{
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* End sách 2 page */
