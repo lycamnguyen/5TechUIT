@@ -586,26 +586,4 @@ $(document).ready(function () {
             window.location.href = "index.html";
         }, 3000);
     })
-    
-//Slide up down cho container sách của trang sách 2
-$(document).ready(function() {
-    $(".hover-content").hide();
-    $(".anhbia-container").hover(
-        function() {
-            $(this).find(".hover-content").stop().slideDown();
-          },
-          function() {
-            $(this).find(".hover-content").stop().slideUp();
-          }
-    );
-  });
-//Sắp xếp sách 2
-$(document).ready(function() {
-    $(".sapxep-trigger").click(function() {
-      $(".sapxep-options").toggle();
-    });
-  });
 })
-
-
-
