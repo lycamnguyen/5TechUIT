@@ -781,6 +781,20 @@ footer>p {
     padding: 0px 30px;
 }
 
+.description{
+    width: 600px;
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.description b{
+    width: 250px;
+}
+.description_span{
+    font-weight: normal;
+}
+
 #title {
     font-weight: bold;
     margin-bottom: 15px;
